@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func exitTohere(sender: UIStoryboardSegue){
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,16 +34,16 @@ class ViewController: UIViewController {
         emitterCell.contents = UIImage(named: "sakulaFlower")!.cgImage
         //设置粒子缩放比例
         
-        emitterCell.scale=0.01
+        emitterCell.scale=0.02
         
         //缩放范围 正负0.05+0.02
-        emitterCell.scaleRange=0.05
+        emitterCell.scaleRange=0.5
         
         //每秒粒子产生数量
         emitterCell.birthRate=50
         
         //粒子生命周期
-        emitterCell.lifetime=8;
+        emitterCell.lifetime=80;
         
        
         //粒子速度
@@ -69,7 +72,7 @@ class ViewController: UIViewController {
 
         emitter.emitterCells = [emitterCell]  //这里可以设置多种粒子 我们以一种为粒子
         
-        emitterCell.scaleSpeed = -0.15  //逐渐变小
+        //emitterCell.scaleSpeed = -0.15  //逐渐变小
         
         emitterCell.alphaRange = 0.75   //随机透明度
         emitterCell.alphaSpeed = -0.01  //逐渐消失

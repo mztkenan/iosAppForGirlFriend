@@ -12,6 +12,12 @@
 		432910671DF2701500264D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432910651DF2701500264D8F /* Main.storyboard */; };
 		432910691DF2701500264D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432910681DF2701500264D8F /* Assets.xcassets */; };
 		4329106C1DF2701500264D8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4329106A1DF2701500264D8F /* LaunchScreen.storyboard */; };
+		434DEA0F1DF2B7F40019DCE5 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DEA0E1DF2B7F40019DCE5 /* BirthdayViewController.swift */; };
+		434DEA111DF2BC250019DCE5 /* QuarrelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DEA101DF2BC250019DCE5 /* QuarrelViewController.swift */; };
+		434DEA131DF2BC6C0019DCE5 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DEA121DF2BC6C0019DCE5 /* ShoppingViewController.swift */; };
+		434DEA151DF2BCB20019DCE5 /* SingingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DEA141DF2BCB20019DCE5 /* SingingViewController.swift */; };
+		434DEA171DF2BD0D0019DCE5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DEA161DF2BD0D0019DCE5 /* MapViewController.swift */; };
+		434DEA191DF2BD2E0019DCE5 /* GetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DEA181DF2BD2E0019DCE5 /* GetUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		432910681DF2701500264D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4329106B1DF2701500264D8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4329106D1DF2701500264D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434DEA0E1DF2B7F40019DCE5 /* BirthdayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
+		434DEA101DF2BC250019DCE5 /* QuarrelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuarrelViewController.swift; sourceTree = "<group>"; };
+		434DEA121DF2BC6C0019DCE5 /* ShoppingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		434DEA141DF2BCB20019DCE5 /* SingingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingingViewController.swift; sourceTree = "<group>"; };
+		434DEA161DF2BD0D0019DCE5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		434DEA181DF2BD2E0019DCE5 /* GetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +66,15 @@
 		432910601DF2701500264D8F /* AppForGirlFriend */ = {
 			isa = PBXGroup;
 			children = (
+				434DEA161DF2BD0D0019DCE5 /* MapViewController.swift */,
+				434DEA141DF2BCB20019DCE5 /* SingingViewController.swift */,
+				434DEA121DF2BC6C0019DCE5 /* ShoppingViewController.swift */,
+				434DEA101DF2BC250019DCE5 /* QuarrelViewController.swift */,
+				434DEA0E1DF2B7F40019DCE5 /* BirthdayViewController.swift */,
 				432910611DF2701500264D8F /* AppDelegate.swift */,
 				432910631DF2701500264D8F /* ViewController.swift */,
 				432910651DF2701500264D8F /* Main.storyboard */,
+				434DEA181DF2BD2E0019DCE5 /* GetUpViewController.swift */,
 				432910681DF2701500264D8F /* Assets.xcassets */,
 				4329106A1DF2701500264D8F /* LaunchScreen.storyboard */,
 				4329106D1DF2701500264D8F /* Info.plist */,
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434DEA191DF2BD2E0019DCE5 /* GetUpViewController.swift in Sources */,
+				434DEA151DF2BCB20019DCE5 /* SingingViewController.swift in Sources */,
 				432910641DF2701500264D8F /* ViewController.swift in Sources */,
+				434DEA111DF2BC250019DCE5 /* QuarrelViewController.swift in Sources */,
 				432910621DF2701500264D8F /* AppDelegate.swift in Sources */,
+				434DEA0F1DF2B7F40019DCE5 /* BirthdayViewController.swift in Sources */,
+				434DEA131DF2BC6C0019DCE5 /* ShoppingViewController.swift in Sources */,
+				434DEA171DF2BD0D0019DCE5 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
