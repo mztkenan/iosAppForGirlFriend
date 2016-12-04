@@ -10,6 +10,9 @@ import UIKit
 
 class GetUpViewController: UIViewController {
 
+    @IBAction func callBoyFriend(_ sender: AnyObject) {
+        UIApplication.shared.openURL(NSURL(string: "tel://15650766970") as! URL)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
