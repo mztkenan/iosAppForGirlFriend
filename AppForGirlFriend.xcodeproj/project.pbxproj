@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4319CC051DF3CB5F001A8234 /* DataChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319CC041DF3CB5F001A8234 /* DataChooserViewController.swift */; };
 		432910621DF2701500264D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432910611DF2701500264D8F /* AppDelegate.swift */; };
 		432910641DF2701500264D8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432910631DF2701500264D8F /* ViewController.swift */; };
 		432910671DF2701500264D8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432910651DF2701500264D8F /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4319CC041DF3CB5F001A8234 /* DataChooserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataChooserViewController.swift; sourceTree = "<group>"; };
 		4329105E1DF2701500264D8F /* AppForGirlFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForGirlFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		432910611DF2701500264D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		432910631DF2701500264D8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				432910611DF2701500264D8F /* AppDelegate.swift */,
 				432910631DF2701500264D8F /* ViewController.swift */,
 				432910651DF2701500264D8F /* Main.storyboard */,
+				4319CC041DF3CB5F001A8234 /* DataChooserViewController.swift */,
 				434DEA181DF2BD2E0019DCE5 /* GetUpViewController.swift */,
 				432910681DF2701500264D8F /* Assets.xcassets */,
 				4329106A1DF2701500264D8F /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				434DEA191DF2BD2E0019DCE5 /* GetUpViewController.swift in Sources */,
 				434DEA151DF2BCB20019DCE5 /* SingingViewController.swift in Sources */,
 				432910641DF2701500264D8F /* ViewController.swift in Sources */,
+				4319CC051DF3CB5F001A8234 /* DataChooserViewController.swift in Sources */,
 				434DEA111DF2BC250019DCE5 /* QuarrelViewController.swift in Sources */,
 				432910621DF2701500264D8F /* AppDelegate.swift in Sources */,
 				434DEA0F1DF2B7F40019DCE5 /* BirthdayViewController.swift in Sources */,
@@ -292,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangbinbin.AppForGirlFriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangbinbin.AppForGirlFriend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

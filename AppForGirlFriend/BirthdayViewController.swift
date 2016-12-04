@@ -10,6 +10,22 @@ import UIKit
 
 class BirthdayViewController: UIViewController {
 
+    func calculateDateDifference(chosenDate:Date){
+        let todaysDate:Date=Date()
+        let difference:TimeInterval=todaysDate.timeIntervalSince(chosenDate)/86400
+        
+        let dateFormat:DateFormatter=DateFormatter()
+        dateFormat.dateFormat="MMMM d,yyyy"
+        
+        let todaysDateString:String=dateFormat.string(from: todaysDate)
+        let chosenDateString:String=dateFormat.string(from: chosenDate)
+        
+        let differenceOutput:String=String(format: "你选择的是（%@），距离今天（%@）已经过了（%1.2f）个美好的一天啦", chosenDateString,todaysDateString,fabs(difference))
+        
+        outputLabel.text=differenceOutput
+    }
+    
+    @IBOutlet weak var outputLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

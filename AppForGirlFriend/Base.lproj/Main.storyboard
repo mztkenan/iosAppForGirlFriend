@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,17 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjZ-CX-CpQ">
-                                <frame key="frameInset" minX="137" minY="140" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="我要过生日 " backgroundImage="whiteButton">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rCZ-uZ-EaP" kind="presentation" id="wGR-vK-IWg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGH-Nk-CeD">
                                 <frame key="frameInset" minX="137" minY="201" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,6 +74,17 @@
                                     <segue destination="oUu-69-J1P" kind="presentation" id="PcU-Tn-kno"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjZ-CX-CpQ">
+                                <frame key="frameInset" minX="137" minY="140" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="我要过生日 " backgroundImage="whiteButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rCZ-uZ-EaP" kind="presentation" id="wGR-vK-IWg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -105,9 +106,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlA-fw-ezH">
-                                <frame key="frameInset" minX="137" minY="451" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBN-IM-vME">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="l3u-Eh-xhR"/>
+                                    <barButtonItem title="选择生日" id="R7o-CJ-pZz">
+                                        <connections>
+                                            <segue destination="XpW-eK-6x4" kind="popoverPresentation" popoverAnchorBarButtonItem="R7o-CJ-pZz" id="3A7-UR-TzF">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qAC-BB-oTm"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="快选择哦😯" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFI-EX-Bpa">
+                                <frame key="frameInset" minY="168" width="359" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="sWo-JT-FEL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlA-fw-ezH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="C2E-iK-sPa"/>
+                                    <constraint firstAttribute="height" constant="30" id="Llg-Pj-u6y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="回去啦" backgroundImage="whiteButton">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,12 +143,79 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pBN-IM-vME" secondAttribute="trailing" id="GUI-7K-5YN"/>
+                            <constraint firstItem="qlA-fw-ezH" firstAttribute="top" secondItem="WFI-EX-Bpa" secondAttribute="bottom" constant="93" id="IOS-3J-Gdy"/>
+                            <constraint firstItem="qlA-fw-ezH" firstAttribute="centerX" secondItem="pBN-IM-vME" secondAttribute="centerX" id="KbL-47-SjJ"/>
+                            <constraint firstItem="WFI-EX-Bpa" firstAttribute="leading" secondItem="ROS-qu-Zp1" secondAttribute="leadingMargin" constant="44" id="QWu-RF-iE0"/>
+                            <constraint firstItem="WFI-EX-Bpa" firstAttribute="centerX" secondItem="qlA-fw-ezH" secondAttribute="centerX" id="Rs6-qx-gK5"/>
+                            <constraint firstItem="pBN-IM-vME" firstAttribute="leading" secondItem="ROS-qu-Zp1" secondAttribute="leading" id="V2y-tx-OgC"/>
+                            <constraint firstItem="WFI-EX-Bpa" firstAttribute="top" secondItem="XLq-Do-z9E" secondAttribute="bottom" constant="148" id="cnK-kH-Ayq"/>
+                            <constraint firstItem="pBN-IM-vME" firstAttribute="bottom" secondItem="SW4-Na-IgQ" secondAttribute="top" id="di3-3B-fQv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="WFI-EX-Bpa" id="MCL-ex-5AE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LtX-ar-Feg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ofu-ez-CBA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="734" y="36"/>
+            <point key="canvasLocation" x="733.60000000000002" y="35.532233883058474"/>
+        </scene>
+        <!--Data Chooser View Controller-->
+        <scene sceneID="NQ7-vb-f5j">
+            <objects>
+                <viewController id="XpW-eK-6x4" customClass="DataChooserViewController" customModule="AppForGirlFriend" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yNs-Pd-YeT"/>
+                        <viewControllerLayoutGuide type="bottom" id="efq-Oj-YmX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jWU-nD-BUa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cc8-ux-NRb">
+                                <frame key="frameInset" minY="66" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="502518107.936014">
+                                    <!--2016-12-04 04:21:47 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="setDateTime:" destination="XpW-eK-6x4" eventType="valueChanged" id="yoo-Gr-DgC"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我要过生日！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfu-VO-1vn">
+                                <frame key="frameInset" minX="133.5" minY="28" width="108" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="mIx-Z3-fxA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxD-Vg-1aP">
+                                <state key="normal" title="好啦"/>
+                                <connections>
+                                    <action selector="dismissDateTime:" destination="XpW-eK-6x4" eventType="touchUpInside" id="1Qw-QN-DZn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97591456202487237" blue="0.91190171461055081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qfu-VO-1vn" firstAttribute="top" secondItem="yNs-Pd-YeT" secondAttribute="bottom" constant="88" id="7PK-yM-wRt"/>
+                            <constraint firstItem="qxD-Vg-1aP" firstAttribute="bottom" secondItem="efq-Oj-YmX" secondAttribute="top" id="HQv-9l-uJX"/>
+                            <constraint firstItem="Qfu-VO-1vn" firstAttribute="centerX" secondItem="Cc8-ux-NRb" secondAttribute="centerX" id="Pti-MV-Aj8"/>
+                            <constraint firstItem="Cc8-ux-NRb" firstAttribute="leading" secondItem="qxD-Vg-1aP" secondAttribute="leading" id="VwZ-VZ-Unr"/>
+                            <constraint firstAttribute="trailing" secondItem="Cc8-ux-NRb" secondAttribute="trailing" id="atA-CV-oVf"/>
+                            <constraint firstItem="Cc8-ux-NRb" firstAttribute="trailing" secondItem="qxD-Vg-1aP" secondAttribute="trailing" id="kvZ-DB-uh0"/>
+                            <constraint firstItem="Cc8-ux-NRb" firstAttribute="top" secondItem="Qfu-VO-1vn" secondAttribute="bottom" constant="8" symbolic="YES" id="lwG-ig-8Cu"/>
+                            <constraint firstItem="Cc8-ux-NRb" firstAttribute="leading" secondItem="jWU-nD-BUa" secondAttribute="leading" id="s7L-uG-Fea"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQh-ef-xjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="733.60000000000002" y="802.848575712144"/>
         </scene>
         <!--Quarrel View Controller-->
         <scene sceneID="Fxb-bD-oxg">
@@ -308,7 +400,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blueButton" width="29" height="45"/>
+        <image name="blueButton" width="29" height="46"/>
         <image name="whiteButton" width="29" height="46"/>
     </resources>
 </document>
