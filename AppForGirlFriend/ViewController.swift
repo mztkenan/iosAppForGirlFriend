@@ -15,8 +15,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backgound=UIImage(named: "sakulaTree")
-        self.view.backgroundColor=UIColor(patternImage: backgound!)
+       // let backgound=UIImage(named: "sakulaTree")
+      //  self.view.backgroundColor=UIColor(patternImage: backgound!)
         
         let rect = CGRect(x: 0.0, y: -70.0, width: view.bounds.width,height: 50.0)
         let emitter = CAEmitterLayer()
