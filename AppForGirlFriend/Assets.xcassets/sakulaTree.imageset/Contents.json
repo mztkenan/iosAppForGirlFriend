@@ -2,30 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "樱花树2.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "樱花树2.jpeg",
       "scale" : "2x"
     },
     {
-      "resizing" : {
-        "mode" : "9-part",
-        "center" : {
-          "mode" : "tile",
-          "width" : 722,
-          "height" : 36
-        },
-        "cap-insets" : {
-          "bottom" : 562,
-          "top" : 402,
-          "right" : 365,
-          "left" : 413
-        }
-      },
       "idiom" : "universal",
-      "filename" : "樱花树2.png",
       "scale" : "3x"
     }
   ],

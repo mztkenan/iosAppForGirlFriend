@@ -241,8 +241,55 @@
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame-1" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-WN-B5w">
+                                <frame key="frameInset" minX="283" minY="59" width="124" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWR-0e-KyG">
+                                <frame key="frameInset" minX="100" minY="449" width="175" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="让他滚！！">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleAnimation:" destination="vnR-H3-xPs" eventType="touchUpInside" id="D1d-kq-CDh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame-1" translatesAutoresizingMaskIntoConstraints="NO" id="v1D-Uh-Be9">
+                                <frame key="frameInset" minX="-3" minY="113" width="164" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame-1" translatesAutoresizingMaskIntoConstraints="NO" id="qbH-8s-aN4">
+                                <frame key="frameInset" minX="-29" minY="59" width="132" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame-1" translatesAutoresizingMaskIntoConstraints="NO" id="mAa-wh-003">
+                                <frame key="frameInset" minX="71" minY="82" width="240" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" autorepeat="NO" wraps="YES" value="1" minimumValue="0.25" maximumValue="1.75" stepValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="mRM-4a-bWP">
+                                <frame key="frameInset" minX="144" minY="368" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="incrementSpeed:" destination="vnR-H3-xPs" eventType="valueChanged" id="gcF-b5-egt"/>
+                                </connections>
+                            </stepper>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame-1" translatesAutoresizingMaskIntoConstraints="NO" id="zcO-hW-har">
+                                <frame key="frameInset" minX="217" minY="109" width="168" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.25" maxValue="1.75" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-AE-uT0">
+                                <frame key="frameInset" minX="24" minY="298" width="327" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.98373312702751858" blue="0.60757643123992833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="setSpeed:" destination="vnR-H3-xPs" eventType="valueChanged" id="pTq-Kl-av4"/>
+                                </connections>
+                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yw-ed-Cup">
-                                <frame key="frameInset" minX="137" minY="455" width="100" height="30"/>
+                                <frame key="frameInset" minX="141" minY="535" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="回去啦" backgroundImage="whiteButton">
@@ -252,13 +299,38 @@
                                     <segue destination="6tb-ML-fdg" kind="unwind" unwindAction="exitTohereWithSender:" id="ZeY-Dq-hkG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你的男朋友每秒滚的速度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keW-Kq-Qvk">
+                                <frame key="frameInset" minX="44" minY="34" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.00hps" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Taa-VY-dXa">
+                                <frame key="frameInset" minX="259" minY="34" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99744980569999997" green="0.99744980569999997" blue="0.99744980569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="bunnyview1" destination="mAa-wh-003" id="2mI-aA-SUs"/>
+                        <outlet property="bunnyview2" destination="v1D-Uh-Be9" id="CaM-U2-pdU"/>
+                        <outlet property="bunnyview3" destination="zcO-hW-har" id="K0o-4m-OWO"/>
+                        <outlet property="bunnyview4" destination="qbH-8s-aN4" id="Jch-zx-n60"/>
+                        <outlet property="bunnyview5" destination="aAZ-WN-B5w" id="aOp-M8-Ye9"/>
+                        <outlet property="hopsPerSecond" destination="Taa-VY-dXa" id="n2x-D9-yrp"/>
+                        <outlet property="speedSlider" destination="3gW-AE-uT0" id="aaE-EY-f63"/>
+                        <outlet property="speedStepper" destination="mRM-4a-bWP" id="xKx-HZ-Mzq"/>
+                        <outlet property="toggleButton" destination="nWR-0e-KyG" id="W7R-SR-nan"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cyG-rS-ejh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448" y="34"/>
+            <point key="canvasLocation" x="1447.2" y="33.733133433283363"/>
         </scene>
         <!--Shopping View Controller-->
         <scene sceneID="jLr-Be-sot">
@@ -425,8 +497,9 @@
     </scenes>
     <resources>
         <image name="blueButton" width="29" height="46"/>
+        <image name="frame-1" width="320" height="320"/>
         <image name="rainning" width="220" height="327"/>
-        <image name="sakulaTree" width="281" height="495"/>
+        <image name="sakulaTree" width="563" height="990"/>
         <image name="whiteButton" width="29" height="46"/>
     </resources>
 </document>
