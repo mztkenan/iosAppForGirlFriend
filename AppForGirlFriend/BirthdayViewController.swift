@@ -29,7 +29,7 @@ class BirthdayViewController: UIViewController {
     
         override func viewDidLoad() {
         super.viewDidLoad()
-        let rainDroplayer=CustomLayer.mankeCustomLayer(filepath: "Raindrop")
+        let rainDroplayer=CustomLayer(filePath: "Raindrop")
         rainDroplayer.frame=CGRect(x: 0.0, y: -70.0, width: view.bounds.width,height: 50.0)
         rainDroplayer.emitterSize = CGSize(width: self.view.bounds.size.width*2, height: 0)
         view.layer.addSublayer(rainDroplayer)
