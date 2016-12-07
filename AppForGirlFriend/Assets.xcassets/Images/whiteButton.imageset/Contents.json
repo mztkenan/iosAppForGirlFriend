@@ -44,10 +44,10 @@
         "center" : {
           "mode" : "tile",
           "width" : 7,
-          "height" : 6
+          "height" : 2
         },
         "cap-insets" : {
-          "bottom" : 95,
+          "bottom" : 99,
           "top" : 37,
           "right" : 40,
           "left" : 38

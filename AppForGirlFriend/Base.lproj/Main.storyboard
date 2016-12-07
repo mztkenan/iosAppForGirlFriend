@@ -48,7 +48,7 @@
                                 <frame key="frameInset" minX="36.40%" minY="48.65%" width="26.67%" height="4.50%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="我要唱歌" backgroundImage="whiteButton">
+                                <state key="normal" title="我要许愿" backgroundImage="whiteButton">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -381,6 +381,30 @@
                                 <frame key="frameInset" minX="0.0%" minY="0.0%" width="100.00%" height="100.00%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZS-YI-p9C">
+                                <frame key="frameInset" minX="4.27%" minY="40.18%" width="31.33%" height="12.67%"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="我要钱！" backgroundImage="blueButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doActionSheet:" destination="Aj2-Hr-XLy" eventType="touchUpInside" id="dJ3-3c-kTN"/>
+                                    <action selector="moneySelected:" destination="7xx-O8-D5u" eventType="touchUpInside" id="Vdw-j5-MDT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-YO-5qh">
+                                <frame key="frameInset" minX="34.13%" minY="55.92%" width="31.33%" height="12.67%"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="我要帅哥！" backgroundImage="blueButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doActionSheet:" destination="Aj2-Hr-XLy" eventType="touchUpInside" id="Sfx-je-rjC"/>
+                                    <action selector="handsomeSelected:" destination="7xx-O8-D5u" eventType="touchUpInside" id="MA5-NH-9cx"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQU-GI-gg2">
                                 <frame key="frameInset" minX="34.40%" minY="79.98%" width="31.07%" height="5.40%"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -390,6 +414,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="ofu-ez-CBA" kind="unwind" unwindAction="exitTohereWithSender:" id="cHg-nX-vd0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKx-w4-8AI">
+                                <frame key="frameInset" minX="64.27%" minY="40.18%" width="31.33%" height="12.67%"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="我要花！" backgroundImage="blueButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doActionSheet:" destination="Aj2-Hr-XLy" eventType="touchUpInside" id="ASp-O1-ARe"/>
+                                    <action selector="flowerSelected:" destination="7xx-O8-D5u" eventType="touchUpInside" id="41w-N1-yGF"/>
                                 </connections>
                             </button>
                         </subviews>
